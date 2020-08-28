@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Yamenai`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Benjamin Martin`,
+      summary: `who lives and works in beautiful Halton Hills, ON building useful things.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    description: `A starter blog demonstrating cool thing I've worked on or knowledge I've found valuable.`,
+    siteUrl: `https://benjaminmartin.dev/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `martindevnow`,
     },
   },
   plugins: [
@@ -60,8 +60,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Benjamin Martin's Blog`,
+        short_name: `Yamanai`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
@@ -76,6 +76,36 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    // {
+    //   resolve: `gatsby-plugin-mdx`,
+    //   options: {
+    //     extensions: [".mdx", ".md"],
+    //     gatsbyRemarkPlugins: [
+    //       {
+    //         resolve: `gatsby-remark-images`,
+    //         options: {
+    //           maxWidth: 590,
+    //         },
+    //       },
+    //       {
+    //         resolve: `gatsby-remark-responsive-iframe`,
+    //         options: {
+    //           wrapperStyle: `margin-bottom: 1.0725rem`,
+    //         },
+    //       },
+    //       {
+    //         resolve: `gatsby-remark-vscode`,
+    //       },
+    //       {
+    //         resolve: `gatsby-remark-copy-linked-files`,
+    //       },
+    //       {
+    //         resolve: `gatsby-remark-smartypants`,
+    //       },
+    //     ],
+    //     plugins: [`gatsby-remark-images`],
+    //   },
+    // },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
