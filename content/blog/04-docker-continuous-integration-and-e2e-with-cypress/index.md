@@ -1,7 +1,7 @@
 ---
 title: "Docker Full Circle: Continuous Integration (CI) with Cypress"
 date: "2019-06-25T23:46:37.121Z"
-description: "Docker Full Circle: Continuous Integration (CI) with Cypress"
+description: Learning Docker gives you greater flexibility in CICD pipelines. Continuous Integration tools like Circle CI and Jenkins can run your pipeline in a Docker container. Using our custom Dockerfiles, we build a container for your app, and one for the Cypress test runner to run end-to-end (e2e) tests against your application.
 ---
 
 You're at work and your team has adopted Docker for development. That's great! Everyone is using your custom Docker image to manage dependencies and any other environment requirements. You've _nearly_ made it look just like your production environment. High five!
@@ -12,7 +12,7 @@ Fast forward to the end of the sprint and you're all clamouring to get in your f
 
 But what if I told you there’s a better way? Hopefully, the empathy you have for your QA on your team would encourage you to keep reading. And if you don't have a QA, then I **implore** you to continue.
 
-> **Note:** This article is a continuation of my series about Docker. You can read it here: [Custom Docker Images for Development](https://rangle.io/blog/docker-for-frontend-devs-custom-docker-images-for-development/)
+> **Note:** This article is a continuation of my series about Docker. You can read it here: [Custom Docker Images for Development](https://benjaminmartin.dev/03-docker-creating-custom-docker-images/)
 
 ## CI: Continuous Integration
 
@@ -28,7 +28,7 @@ We'll be covering a lot of topics to setup the entire pipeline, including Docker
 
 ### Docker
 
-In this article, we're going to look at CI/CD pipelines with CircleCI and we're going to use a modified version of the Docker image from the previous article about [Custom Docker Images for Development](https://rangle.io/blog/docker-for-frontend-devs-custom-docker-images-for-development/). **Some knowledge of Docker is required. However, instead of using Docker for development, we will build a "production ready" Docker image to run E2E tests against.**
+In this article, we're going to look at CI/CD pipelines with CircleCI and we're going to use a modified version of the Docker image from the previous article about [Custom Docker Images for Development](https://benjaminmartin.dev/03-docker-creating-custom-docker-images/). **Some knowledge of Docker is required. However, instead of using Docker for development, we will build a "production ready" Docker image to run E2E tests against.**
 
 ### Cypress
 

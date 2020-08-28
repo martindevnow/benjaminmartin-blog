@@ -1,16 +1,16 @@
 ---
 title: "Docker Full Circle: Continuous Delivery (CD) and Feature Branch Deployments"
 date: "2019-10-24T23:46:37.121Z"
-description: "Docker Full Circle: Continuous Delivery (CD) and Feature Branch Deployments"
+description: Using a reverse nginx proxy and the environment variables from the CI pipeline, we configure Docker and our pipeline to build and deploy containers for our feature branches, allowing you to manually test your features before merging your code to the develop or master branch.
 ---
 
-If you've been following along with my Docker series (you can find [my latest article about Continuous Integration (CI) here](https://rangle.io/blog/docker-full-circle-continuous-integration-ci-with-cypress)) then you must be pretty happy to have your CI pipeline solving **all** the world's problems. Your developers are pretty content, but we know there's more we could do. And, I mean, isn't developer happiness the _real_ reason you're reading a DevOps article?
+If you've been following along with my Docker series (you can find [my latest article about Continuous Integration (CI) here](https://benjaminmartin.dev/04-docker-continuous-integration-and-e2e-with-cypress/)) then you must be pretty happy to have your CI pipeline solving **all** the world's problems. Your developers are pretty content, but we know there's more we could do. And, I mean, isn't developer happiness the _real_ reason you're reading a DevOps article?
 
 In this article, I'll outline how you can take the CI pipeline one step further to address the Continuous Deployment (CD) aspect of CICD. More specifically, we'll address how one would configure **feature branch specific** deployments of our app in order to quickly and easily manually test their features, even on mobile devices, before merging their feature branch PR to the develop branch.
 
 ## Prerequisite Knowledge
 
-If you haven't been following along with [my previous articles](https://rangle.io/blog/author/ben-martin), to get the most out of this article, you should first have a Dockerized application. If you also have a CircleCI pipeline configured, that's a huge head start! We will be building off that. In our hypothetical situation, we're using an AWS EC2 instance from the free tier in AWS. If you're new to AWS, this could easily be replaced by other technologies. One would only need a server to deploy to. In the past, I used a \$5 Digital Ocean droplet to accomplish the same effect, but it's up to you to determine where you want to deploy.
+If you haven't been following along with [my previous articles](https://benjaminmartin.dev), to get the most out of this article, you should first have a Dockerized application. If you also have a CircleCI pipeline configured, that's a huge head start! We will be building off that. In our hypothetical situation, we're using an AWS EC2 instance from the free tier in AWS. If you're new to AWS, this could easily be replaced by other technologies. One would only need a server to deploy to. In the past, I used a \$5 Digital Ocean droplet to accomplish the same effect, but it's up to you to determine where you want to deploy.
 
 Here's what you'll need:
 
@@ -21,7 +21,7 @@ Here's what you'll need:
 - Domain name pointing to your server
 - Wildcard TLS Certificate for the above domain name
 
-> Note: Details for most of the above, aside from anything deployment related, can be found in [my previous article.](https://rangle.io/blog/docker-full-circle-continuous-integration-ci-with-cypress)
+> Note: Details for most of the above, aside from anything deployment related, can be found in [my previous article.](https://benjaminmartin.dev/04-docker-continuous-integration-and-e2e-with-cypress)
 
 ## The Goal: Fast Feedback
 

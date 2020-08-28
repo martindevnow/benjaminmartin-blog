@@ -1,14 +1,14 @@
 ---
 title: Docker for Frontend Devs - Custom Docker Images for Development
 date: "2019-05-08T23:46:37.121Z"
-description: Docker for Frontend Devs - Custom Docker Images for Development
+description: Build a custom Docker image for your application! Serve your application from a Docker container. Learn what Docker is and find several opportunities for cutting down on image size.
 ---
 
 Let’s take a moment to consider what is important for local development. For me, I want to make sure all my developers are using the same dependencies, and I don't want to worry about what versions they have installed. No more “but it works on my machine” excuses. At the same time, I want to make sure we retain the conveniences of HMR (Hot Module Replacement) so that developers don't need to constantly refresh the application to see their changes reflected. We don’t want to lose fast feedback.
 
 In this article, we'll look at how we can setup Docker for a boilerplate VueJS app with custom `Dockerfile`s from which our images and containers will be built and how we gain efficiencies from these.
 
-In case you missed the first part in this series, [check here to learn more about the command line interface](https://blog.rangle.io/learning-docker-command-line-interface/) that Docker ships with. We need to use the commands from that article in this section. If you are already familiar with Docker CLI, please continue to follow along.
+In case you missed the first part in this series, [check here to learn more about the command line interface](https://benjaminmartin.dev/02-docker-learning-the-command-line/) that Docker ships with. We need to use the commands from that article in this section. If you are already familiar with Docker CLI, please continue to follow along.
 
 ## Prerequisite: Create our project
 
