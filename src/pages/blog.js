@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 
-const HomePage = ({ data, location }) => {
+const BlogPage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
 
@@ -44,7 +44,7 @@ const HomePage = ({ data, location }) => {
   )
 }
 
-export default HomePage
+export default BlogPage
 
 export const pageQuery = graphql`
   query {
